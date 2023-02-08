@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS employee;
+DROP TABLE IF EXISTS employees;
 
-CREATE TABLE employee (
+CREATE TABLE employees (
     id SERIAL NOT NULL,
     name VARCHAR(15),
     surname VARCHAR(25),
@@ -9,7 +9,7 @@ CREATE TABLE employee (
     PRIMARY KEY (id)
 );
 
-INSERT INTO employee (name, surname, department, salary)
+INSERT INTO employees (name, surname, department, salary)
 VALUES
     ('Sergey', 'Kovalev', 'Sales', 800),
     ('Mihail', 'Semenov', 'It', 850),
